@@ -41,7 +41,10 @@
 
         <preference name="BLUETOOTH_USAGE_DESCRIPTION" default=" " />
         <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
-            <string>$BLUETOOTH_USAGE_DESCRIPTION</string>
+            <string>The app is scanning for Bluetooth Low Energy Peripherals to find Giiker cubes</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription">
+            <string>The app needs continuous Bluetooth connection to communicate with Giiker cubes</string>
         </config-file>
     </platform>
 
